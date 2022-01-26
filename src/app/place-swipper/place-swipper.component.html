@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="card mx-auto" style="width: 24rem;">
+        <img class="card-img-top"
+            src="{{places[selectedIndex].imagePath}}"
+            alt="can't find the image" 
+            height="300px">
+        <div class="card-body">
+            <h1 class="card-title">{{places[selectedIndex].name}}</h1>
+            <h4 class="card-subtitle mb-2 text-muted">{{places[selectedIndex].address}}</h4>
+            <div class="card-body">
+                <p>{{places[selectedIndex].description}}</p>
+            </div>
+            <a href="#" class="btn btn-primary">Website</a>
+        </div>
+    </div>
+    <hr class="mx-auto" style="width: 24rem;">
+    <div class="row mx-auto" style="width: 24rem;">
+        <button class="col-6 btn col btn-danger" (click)="onDislike()">No</button>
+        <button class="col-6 btn col btn-success" (click)="onLike()">Yes</button>
+    </div>
+</div>
